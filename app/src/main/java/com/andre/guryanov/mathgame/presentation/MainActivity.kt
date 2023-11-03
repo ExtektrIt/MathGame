@@ -1,7 +1,8 @@
-package com.andre.guryanov.mathgame
+package com.andre.guryanov.mathgame.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.andre.guryanov.mathgame.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

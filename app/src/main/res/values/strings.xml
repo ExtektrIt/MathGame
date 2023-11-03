@@ -1,3 +1,31 @@
 <resources>
     <string name="app_name">Math Game</string>
+
+    <string name="f_title">Правила</string>
+    <string name="f_level_selector">Выбор уровня</string>
+    <string name="f_game">Игра</string>
+    <string name="f_game_result">Результаты</string>
+
+    <string name="f_title__title">Состав числа</string>
+    <string name="f_title__rules">Правила игры: перед вами будут три фигуры, две снизу и одна сверху. В двух из них будут числа. Необходимо, чтобы сумма чисел из двух нижних фигур была равна числу в верхней фигуре. Для этого нужно выбрать недостающее число.</string>
+    <string name="f_title__example">Пример: в верхнем круге число 7, в одном из нижних квадратов знак вопроса, а в другом число 4. Значит, на месте вопросительного знака должно быть число 3, потому что 3 + 4 = 7. Следовательно, в вариантах ответов нужно выбрать число 3.</string>
+    <string name="f_title__understand">Понятно</string>
+
+    <string name="f_level_selector_message">Выберите уровень сложности:</string>
+    <string name="f_level_selector__test">Тестовый</string>
+    <string name="f_level_selector__easy">Лёгкий</string>
+    <string name="f_level_selector__medium">Средний</string>
+    <string name="f_level_selector__hard">Тяжёлый</string>
+
+    <string name="f_game__progress">Правильных ответов %s (минимум %s)</string>
+
+    <string name="f_game_finished__img_result_cd">Смайлик</string>
+    <string name="f_game_finished__needle_right_answers">Необходимое количество правильных ответов: %s</string>
+    <string name="f_game_finished__your_score">Ваш счёт: %s</string>
+    <string name="f_game_finished__needle_percent_of_right_answers">Необходимый процент правильных ответов: %s</string>
+    <string name="f_game_finished__percent_of_right_answers">Процент правильных ответов: %s</string>
+    <string name="f_game_finished__try_again">Попробовать снова</string>
+
+<!--    <string name="hello_blank_fragment">Hello blank fragment</string>-->
+
 </resources>
