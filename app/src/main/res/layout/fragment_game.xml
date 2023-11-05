@@ -69,12 +69,12 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:text="@string/f_game__progress"
         android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@id/progress_bar__f_game"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_visible_number" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_visible_number"
+        tools:text="@string/f_game__progress" />
 
     <ProgressBar
         android:id="@+id/progress_bar__f_game"
