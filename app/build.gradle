@@ -3,12 +3,10 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-parcelize'
     id 'kotlin-kapt'
-//    id 'androidx.navigation.safeargs'
     id 'androidx.navigation.safeargs.kotlin'
 }
 
 android {
-//    namespace 'com.andre.guryanov.mathgame'
     compileSdk 34
 
     defaultConfig {
@@ -36,7 +34,7 @@ android {
     }
 
     buildFeatures {
-        viewBinding = true
+        dataBinding = true
     }
 }
 

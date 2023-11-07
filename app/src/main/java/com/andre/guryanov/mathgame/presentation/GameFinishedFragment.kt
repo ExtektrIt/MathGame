@@ -19,9 +19,9 @@ class GameFinishedFragment : Fragment() {
     private val binding: FragmentGameFinishedBinding
         get() = _binding ?: throw java.lang.RuntimeException("FragmentGameFinishedBinding == null")
 
-    private val result by lazy {
-        args.result
-    }
+//    private val result by lazy {
+//        args.result
+//    }
 
 
 
@@ -36,7 +36,8 @@ class GameFinishedFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        initViews()
+//        initViews()
+        binding.result = args.result
         binding.btnTryAgainFGameFinished.setOnClickListener {
             tryAgain()
         }
@@ -53,29 +54,29 @@ class GameFinishedFragment : Fragment() {
         findNavController().popBackStack()
     }
 
-    private fun initViews() = with(binding) {
-        tvRequiredAnswersFGameFinished.text = requireActivity()
-            .getString(R.string.f_game_finished__needle_right_answers)
-            .format(result.gameSettings.minCountOfRightAnswers)
+//    private fun initViews() = with(binding) {
+//        tvRequiredAnswersFGameFinished.text = requireActivity()
+//            .getString(R.string.f_game_finished__needle_right_answers)
+//            .format(result.gameSettings.minCountOfRightAnswers)
+//
+//        tvScoreFGameFinished.text = requireActivity()
+//            .getString(R.string.f_game_finished__your_score)
+//            .format(result.countOfRightAnswers)
+//
+//        tvPercentOfRightAnswersFGameFinished.text = requireActivity()
+//            .getString(R.string.f_game_finished__percent_of_right_answers)
+//            .format(calculatePercent(result))
+//
+//        tvRequiredPercentFGameFinished.text = requireActivity()
+//            .getString(R.string.f_game_finished__needle_percent_of_right_answers)
+//            .format(result.gameSettings.minPercentOfRightAnswers)
+//
+//        if (result.winner) imgResultFGameFinished.setImageResource(R.drawable.img_win)
+//        else imgResultFGameFinished.setImageResource(R.drawable.img_lose)
+//    }
 
-        tvScoreFGameFinished.text = requireActivity()
-            .getString(R.string.f_game_finished__your_score)
-            .format(result.countOfRightAnswers)
-
-        tvPercentOfRightAnswersFGameFinished.text = requireActivity()
-            .getString(R.string.f_game_finished__percent_of_right_answers)
-            .format(calculatePercent(result))
-
-        tvRequiredPercentFGameFinished.text = requireActivity()
-            .getString(R.string.f_game_finished__needle_percent_of_right_answers)
-            .format(result.gameSettings.minPercentOfRightAnswers)
-
-        if (result.winner) imgResultFGameFinished.setImageResource(R.drawable.img_win)
-        else imgResultFGameFinished.setImageResource(R.drawable.img_lose)
-    }
-
-    private fun calculatePercent(result: GameResult) : Int {
-        if (result.countOfQuestions == 0) return 0
-        return result.countOfRightAnswers * 100 / result.countOfQuestions
-    }
+//    private fun calculatePercent(result: GameResult) : Int {
+//        if (result.countOfQuestions == 0) return 0
+//        return result.countOfRightAnswers * 100 / result.countOfQuestions
+//    }
 }
